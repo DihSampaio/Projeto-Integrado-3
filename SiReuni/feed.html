@@ -3,85 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" type="text/css" href="./css/feed.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/geral.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>SiReuni</title>
 </head>
 <body>
-    <body>
-        <!-- --- HEARDER --- -->
-        <header>
-            <div class="logo">
-                <a href="./feed.html"><img src="./img/logo1.png" width="100%"></a>
-            </div>
-                
-            <div class="buscar">
-                <input type="text" placeholder="Pesquise...">
-                <i class="fa fa-search"></i>
-            </div>
+    <header class="white shadow-white">
+        <!-- LOGO -->
+        <div class="logo-feed">
+            <img src="/img/logo-feed.png">
+        </div>
+        <!-- SEARCH -->
+        <div class="buscar">
+            <input type="text" id="buscar" placeholder="Pesquise...">
+        </div>
+        <!-- PERFIL -->
+        <div class="user">
+            <i class="fa fa-user-circle"></i>
+        </div>
+    </header>
 
-            <div class="perfil">
-                <div class="user">
-                    <i class="fa fa-user-circle"></i>
+    <!-- CONTENT -->
+    <div class="mini-container gray">
+        <!-- SIDEBAR -->
+        <div class="sidebar shadow-white">
+            <a href="./feed.html"><div class="buttons">Comunidade</div></a>
+                <a href="#"><div class="buttons">Receitas</div></a>
+                <a href="./forum.html"><div class="buttons">Fórum</div></a>
+                <a href="#"><div class="buttons">Notícias</div></a>
+                <a href="#"><div class="buttons">Contato</div></a>
+        </div>
+        <!-- POSTS -->
+        <div class="row-2 white shadow-white">
+            <div class="post" id="post-intro">
+                <div class="text-intro">
+                    <span>Bem-vindo ao SiReuni!</span><br>
+                    Conheça pessoas, compartilhe e descubra<br>novas receitas e claro, divirta-se!
                 </div>
-            </div>
-        </header>
-        <div class="container">
-            <div class="sidebar">
-                <div class="buttons"><a href="./feed.html">Comunidade</a></div>
-                <div class="buttons"><a>Receitas</a></div>
-                <div class="buttons"><a>Fórum</a></div>
-                <div class="buttons"><a>Notícias</a></div>
-                <div class="buttons"><a>Contato</a></div>
-            </div>
-
-            <div class="content">
-                <div class="infor-content">
-                    <div class="post">
-                        <div class="text">
-                            <span>Bem-vindo ao SiReuni!</span><br>
-                            <div class="text-intro">
-                                Conheça pessoas, compartilhe e descubra<br>novas receitas e claro, <span>divirta-se!</span>
-                            </div>
-                        </div>
-
-                        <div class="img-intro">
-                            <img src="./img/Maçã.png" width="100%">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="new-post">
-                    <button>
-                        <i class="fa fa-plus"></i>
-                        Novo Post
-                    </button>
+                <!-- MAÇÃ -->
+                <div class="foto-maça">
+                    <img src="/img/Maçã.png">
                 </div>
             </div>
         </div>
+        <!-- NEW POST -->
+        <button class="button white shadow-white">
+            <i class="fa fa-plus"></i>
+            Novo Post
+        </button>
 
         <!-- MODALS -->
 
-        <!-- MODAL PERFIL -->
-        <!-- <div class="modal-perfil">
+         <!-- MODAL PERFIL -->
+         <div class="modal-perfil">
             <ul>
-                <a><li>
+                <a href="#"><li>
                     <i id="perfil" class="fa fa-user"></i>
                     Perfil
                 </li></a>
 
-                <a><li>
+                <a href="#"><li>
                     <i class="fa fa-cog"></i>
                     Configurações
                 </li></a>
 
-                <a href="./index.html"><li>
+                <a href="./login.html"><li>
                     <i class="fa fa-sign-out"></i>
                     Log Out
                 </li></a>
             </ul>
-        </div> -->
-    </body>
+        </div>
+    </div>
 </body>
 </html>
